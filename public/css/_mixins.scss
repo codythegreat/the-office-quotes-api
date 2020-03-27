@@ -1,0 +1,27 @@
+$tinyMobile: 375px;
+$maxMobile: 800px;
+$maxDesktopSM: 1200px;
+
+@mixin tinyMobile {
+  @media (max-width: #{$tinyMobile}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$maxMobile}) {
+    @content;
+  }
+}
+
+@mixin desktopSM {
+  @media (min-width: #{$maxMobile}) {
+    @content;
+  }
+}
+
+@mixin desktopMD {
+  @media (min-width: #{$maxDesktopSM}) {
+    @content;
+  }
+}

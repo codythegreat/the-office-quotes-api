@@ -1,0 +1,111 @@
+@import '_mixins';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #74a0ff;
+    margin: 0;
+    padding: 0;
+}
+
+
+#quote-container {
+    width: 60vw;
+    height: 60vw*1.29;
+    background-color: white;
+    margin: 3rem auto;
+    box-shadow: 10px 10px 10px #6190f7;
+
+    @include mobile{
+        width: 90vw;
+        height: 90vw*1.29;
+        font-size: .8rem;
+        margin: 4rem auto;
+    }
+
+    #dunder-mifflin {
+        padding-top: 2rem;
+        text-align: center;
+        letter-spacing: 1rem;
+
+        span {
+            display: block;
+            font-size: 5rem;
+            font-weight: bold;
+        }
+
+        @include mobile {
+            padding-top: .5rem;
+            letter-spacing: .5rem;
+            span {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    #memo-text {
+        margin: 2rem 3rem;
+        font-size: 3rem;
+        font-weight: bolder;
+
+        @include mobile {
+            margin: 1rem 1rem;
+            font-size: 1.3rem;
+        }
+    }
+
+    #from-desk-of {
+        margin: 2rem 3rem;
+        font-weight: bold;
+        span {
+            font-weight: 100;
+        }
+
+        @include mobile {
+            margin: 1rem 1rem;
+        }
+    }
+
+    #re {
+        margin: 2rem 3rem;
+        font-weight: bold;
+        span {
+            font-weight: 100;
+        }
+
+        @include mobile {
+            margin: 1rem 1rem;
+        }
+    }
+
+    #quote-content {
+        margin: 2rem 3rem;
+
+        @include mobile {
+            margin: 1rem 1rem;
+        }
+    }
+}
+
+#api-info-container {
+    background-color: #4568b4;
+    text-align: center;
+    color: #fb5;
+    padding: 3rem 0;
+    p {
+        font-weight: bold;
+        font-size: 2rem;
+        @include mobile {
+            font-size: 1.4rem;
+        }
+    }
+    ul {
+        padding: 0 1rem;
+        @include mobile {
+            font-size: .8rem;
+        }
+    }
+    li {
+        list-style-type: none;
+        list-style: none;
+    }
+}

@@ -1,0 +1,133 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #74a0ff;
+  margin: 0;
+  padding: 0;
+}
+
+#quote-container {
+  width: 60vw;
+  height: 77.4vw;
+  background-color: white;
+  margin: 3rem auto;
+  -webkit-box-shadow: 10px 10px 10px #6190f7;
+          box-shadow: 10px 10px 10px #6190f7;
+}
+
+@media (max-width: 800px) {
+  #quote-container {
+    width: 90vw;
+    height: 116.1vw;
+    font-size: .8rem;
+    margin: 4rem auto;
+  }
+}
+
+#quote-container #dunder-mifflin {
+  padding-top: 2rem;
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
+#quote-container #dunder-mifflin span {
+  display: block;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  #quote-container #dunder-mifflin {
+    padding-top: .5rem;
+    letter-spacing: .5rem;
+  }
+  #quote-container #dunder-mifflin span {
+    font-size: 1.6rem;
+  }
+}
+
+#quote-container #memo-text {
+  margin: 2rem 3rem;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+@media (max-width: 800px) {
+  #quote-container #memo-text {
+    margin: 1rem 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+#quote-container #from-desk-of {
+  margin: 2rem 3rem;
+  font-weight: bold;
+}
+
+#quote-container #from-desk-of span {
+  font-weight: 100;
+}
+
+@media (max-width: 800px) {
+  #quote-container #from-desk-of {
+    margin: 1rem 1rem;
+  }
+}
+
+#quote-container #re {
+  margin: 2rem 3rem;
+  font-weight: bold;
+}
+
+#quote-container #re span {
+  font-weight: 100;
+}
+
+@media (max-width: 800px) {
+  #quote-container #re {
+    margin: 1rem 1rem;
+  }
+}
+
+#quote-container #quote-content {
+  margin: 2rem 3rem;
+}
+
+@media (max-width: 800px) {
+  #quote-container #quote-content {
+    margin: 1rem 1rem;
+  }
+}
+
+#api-info-container {
+  background-color: #4568b4;
+  text-align: center;
+  color: #fb5;
+  padding: 3rem 0;
+}
+
+#api-info-container p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+  #api-info-container p {
+    font-size: 1.4rem;
+  }
+}
+
+#api-info-container ul {
+  padding: 0 1rem;
+}
+
+@media (max-width: 800px) {
+  #api-info-container ul {
+    font-size: .8rem;
+  }
+}
+
+#api-info-container li {
+  list-style-type: none;
+  list-style: none;
+}
+/*# sourceMappingURL=index.css.map */

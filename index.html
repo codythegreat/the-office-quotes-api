@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Office Quotes API</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="quote-container">
+
+        <p id="dunder-mifflin"><span>DUNDER</span><span>MIFFLIN</span>PAPER COMPANY</p>
+
+        <p id="memo-text">MEMO</p>
+
+        <p id="from-desk-of">From The Desk Of: <span id="quote-character">Michael Scott</span></p>
+
+        <p id="re">RE: <span id="quote-season">Season </span></p>
+
+        <p id="quote-content">That's what she said!</p>
+
+    </div>
+
+    <div id="api-info-container">
+
+        <div id="api-info-header">
+
+            <p>How to use The Office Quotes API:</p>
+
+        </div>
+
+        <div id="api-info-body">
+
+            <ul>
+                <li>[base url] - This page</li>
+                <li>/api/all - Get all quotes</li>
+                <li>/api/rand - Get a random quote</li>
+                <li>/api/rand?num=<span>3</span> - Get a number of random quotes</li>
+            </ul>
+
+        </div>
+
+    </div>
+</body>
+
+<script>
+    // ajax calls /api/rand and assigns response
+    // to inner HTML of our quote elements
+    $.ajax({
+        url: "/api/rand",
+        success: res => {   
+            $('#quote-content').html(res.quote);
+            $('#quote-character').html(res.character);
+            $('#quote-season').append(res.season);
+        }
+    });
+</script>
+</html>
